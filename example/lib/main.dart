@@ -12,8 +12,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
-
   @override
   void initState() {
     super.initState();
@@ -26,8 +24,22 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+        body: GestureDetector(
+          child: Container(
+            height: 50.0,
+            width: double.infinity,
+            color: Colors.red.shade200,
+            child: Center(
+              child: Text(
+                "Flutter 点击",
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+            margin: EdgeInsets.all(16.0),
+          ),
+          onTap: (){
+            FlutterLive.instance.startTestActivity();
+          },
         ),
       ),
     );

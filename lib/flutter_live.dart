@@ -2,7 +2,7 @@ import 'package:flutter/services.dart';
 
 /// Created  on 2019/10/12.
 /// @author grey
-/// Function :
+/// Function :  直接跳转百家云平台
 class FlutterLive {
   factory FlutterLive() => _getInstance();
 
@@ -30,5 +30,15 @@ class FlutterLive {
   //跳转直播
   void startLiveActivity() {
     _channel.invokeMethod("startLive", {'path': ""});
+  }
+
+  void startTestActivity() {
+    _channel.invokeListMethod("startTest", {
+      'userName': 'grey',
+      'userNum': 'Hunt19910210',
+      'userAvatar': 'http://www.hunt.199110201.jpg',
+      'sign': 'huntlokjnhmnjo987ss590',
+      'roomId': 123456789012,
+    });
   }
 }

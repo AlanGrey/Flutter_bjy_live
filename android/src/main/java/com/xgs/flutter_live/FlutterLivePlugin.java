@@ -1,8 +1,11 @@
 package com.xgs.flutter_live;
 
 import android.app.AlertDialog;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
 import android.widget.Toast;
 
 import com.baijiayun.live.ui.LiveSDKWithUI;
@@ -37,7 +40,29 @@ public class FlutterLivePlugin implements MethodCallHandler {
             return;
         }
         if (call.method.equals("startLive")) {
-            startLiveActivity("", "", "", "", 0L);
+            String userName = call.argument("userName");
+            String userNum = call.argument("userNum");
+            String userAvatar = call.argument("userAvatar");
+            String sign = call.argument("sign");
+            long roomId = call.argument("roomId");
+            startLiveActivity(userName, userAvatar, userNum, sign, roomId);
+        }
+        if (call.method.equals("startTest")) {
+            String userName = call.argument("userName");
+            String userNum = call.argument("userNum");
+            String userAvatar = call.argument("userAvatar");
+            String sign = call.argument("sign");
+            long roomId = call.argument("roomId");
+
+            Intent intent = new Intent(registrar.activity(), TestActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("userName", userName);
+            bundle.putString("userNum", userNum);
+            bundle.putString("userAvatar", userAvatar);
+            bundle.putString("sign", sign);
+            bundle.putLong("roomId", roomId);
+            intent.putExtras(bundle);
+            registrar.activity().startActivity(intent);
         }
     }
 

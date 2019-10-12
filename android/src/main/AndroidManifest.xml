@@ -1,3 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.xgs.flutter_live">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xgs.flutter_live">
+
+    <application
+        android:name=".MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="flutter_live"
+        tools:replace="android:name,android:label">
+        <activity
+            android:name=".TestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
 </manifest>
