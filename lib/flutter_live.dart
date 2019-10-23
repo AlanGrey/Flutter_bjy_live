@@ -28,8 +28,14 @@ class FlutterLive {
   MethodChannel _channel;
 
   //跳转直播
-  void startLiveActivity() {
-    _channel.invokeMethod("startLive", {'path': ""});
+  void startLiveActivity(String userName, String userNum, String userAvatar, String sign, String roomId) {
+    _channel.invokeMethod("startLive", {
+      'userName': userName,
+      'userNum': userNum,
+      'userAvatar': userAvatar,
+      'sign': sign,
+      'roomId': roomId,
+    });
   }
 
   void startTestActivity() {

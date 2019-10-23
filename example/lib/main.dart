@@ -38,7 +38,13 @@ class _MyAppState extends State<MyApp> {
             margin: EdgeInsets.all(16.0),
           ),
           onTap: (){
-            FlutterLive.instance.startTestActivity();
+            FlutterLive.instance.startLiveActivity(
+              "test",
+              "asdasdasd",
+              "https://oss-cn-shenzhen.aliyuncs.com/shenlun/pic/2019/10/22/16/1571732552500_45135fda-cc9e-41bf-a596-faa0345d61a3.jpg?OSSAccessKeyId=0qzfiBreffBeNSjN&Expires=4725419480&Signature=%2FzFcW2FZ5eEIzkrD3eF3iSyB6vE%3D",
+              "08bad8c3f6f067286c794bd30e6f7e3c",
+              "19102354370699",
+            );
           },
         ),
       ),
