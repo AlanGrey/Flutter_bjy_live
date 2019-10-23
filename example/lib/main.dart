@@ -37,7 +37,7 @@ class _MyAppState extends State<MyApp> {
             ),
             margin: EdgeInsets.all(16.0),
           ),
-          onTap: (){
+          onTap: () {
             FlutterLive.instance.startLiveActivity(
               "test",
               "asdasdasd",
@@ -45,6 +45,7 @@ class _MyAppState extends State<MyApp> {
               "08bad8c3f6f067286c794bd30e6f7e3c",
               "19102354370699",
             );
+//            FlutterLive.instance.startTestActivity();
           },
         ),
       ),

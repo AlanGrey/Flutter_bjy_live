@@ -29,7 +29,7 @@ public class TestActivity extends Activity {
             String userNum = bundle.getString("userNum");
             String userAvatar = bundle.getString("userAvatar");
             String sign = bundle.getString("sign");
-            long roomId = bundle.getLong("roomId");
+            String roomId = bundle.getString("roomId");
             flutterTest =
                     "接受Flutter数据："
                             + "\nuserName = " + userName

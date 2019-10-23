@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.baijiayun.live.ui.LiveSDKWithUI;
@@ -48,6 +49,11 @@ public class FlutterLivePlugin implements MethodCallHandler {
             if (roomId == null || roomId.equals("")) {
                 roomId = "0";
             }
+//            Log.d("tag","userName = " + userName);
+//            Log.d("tag","userNum = " + userNum);
+//            Log.d("tag","userAvatar = " + userAvatar);
+//            Log.d("tag","sign = " + sign);
+//            Log.d("tag","roomId = " + roomId);
             startLiveActivity(userName, userAvatar, userNum, sign, Long.parseLong(roomId));
         }
         if (call.method.equals("startTest")) {
@@ -55,7 +61,7 @@ public class FlutterLivePlugin implements MethodCallHandler {
             String userNum = call.argument("userNum");
             String userAvatar = call.argument("userAvatar");
             String sign = call.argument("sign");
-            long roomId = call.argument("roomId");
+            String roomId = call.argument("roomId");
 
             Intent intent = new Intent(registrar.activity(), TestActivity.class);
             Bundle bundle = new Bundle();
@@ -63,7 +69,7 @@ public class FlutterLivePlugin implements MethodCallHandler {
             bundle.putString("userNum", userNum);
             bundle.putString("userAvatar", userAvatar);
             bundle.putString("sign", sign);
-            bundle.putLong("roomId", roomId);
+            bundle.putString("roomId", roomId);
             intent.putExtras(bundle);
             registrar.activity().startActivity(intent);
         }

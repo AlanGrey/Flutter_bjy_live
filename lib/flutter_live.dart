@@ -40,11 +40,11 @@ class FlutterLive {
 
   void startTestActivity() {
     _channel.invokeListMethod("startTest", {
-      'userName': 'grey',
-      'userNum': 'Hunt19910210',
-      'userAvatar': 'http://www.hunt.199110201.jpg',
-      'sign': 'huntlokjnhmnjo987ss590',
-      'roomId': 123456789012,
+      'userName': '123456',
+      'userNum': '12555500000',
+      'userAvatar': 'http://tmp/wx9fd2a84766c0dda5.o6zAJs0oTVyOg5T7zhHj3CN9L3oQ.twIfOl6IMgw12a17e8c1fb3c815fa16d70b17f6d6522.png',
+      'sign': 'bebb30cdc6f7eeaf9bc5d34d4bd55616',
+      'roomId': '19102354370699',
     });
   }
 }
