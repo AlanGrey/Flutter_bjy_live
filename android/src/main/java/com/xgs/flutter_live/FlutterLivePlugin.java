@@ -44,8 +44,11 @@ public class FlutterLivePlugin implements MethodCallHandler {
             String userNum = call.argument("userNum");
             String userAvatar = call.argument("userAvatar");
             String sign = call.argument("sign");
-            long roomId = call.argument("roomId");
-            startLiveActivity(userName, userAvatar, userNum, sign, roomId);
+            String roomId = call.argument("roomId");
+            if (roomId == null || roomId.equals("")) {
+                roomId = "0";
+            }
+            startLiveActivity(userName, userAvatar, userNum, sign, Long.parseLong(roomId));
         }
         if (call.method.equals("startTest")) {
             String userName = call.argument("userName");
