@@ -38,6 +38,15 @@ class FlutterLive {
     });
   }
 
+  // 跳转在线回放
+  void startPlayBackActivity(String roomId, String token, String sessionId) {
+    _channel.invokeMethod("startBack", {
+      'roomId': roomId,
+      'token': token,
+      'sessionId': sessionId,
+    });
+  }
+
   // 跳转在线直播
   void startVideoActivity(String userName, String userId, String token, String videoId, String title) {
     _channel.invokeMethod("startVideo", {

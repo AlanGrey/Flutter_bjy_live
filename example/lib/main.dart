@@ -28,6 +28,7 @@ class _MyAppState extends State<MyApp> {
           children: <Widget>[
             _buildLiveBtn(),
             _buildVideoBtn(),
+            _buildPlayBackBtn(),
           ],
         ),
       ),
@@ -82,6 +83,30 @@ class _MyAppState extends State<MyApp> {
           "7Enorfb7ARbPdaHUGveyXfIS9zHKsJoQgS-_vFmWAUEHOnWKCLWbAg",
           "27725726",
           "这是一个测试的标题",
+        );
+      },
+    );
+  }
+
+  Widget _buildPlayBackBtn() {
+    return GestureDetector(
+      child: Container(
+        height: 50.0,
+        width: double.infinity,
+        color: Colors.green.shade200,
+        child: Center(
+          child: Text(
+            "Flutter 回放点击",
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
+        margin: EdgeInsets.all(16.0),
+      ),
+      onTap: () {
+        FlutterLive.instance.startPlayBackActivity(
+          "19101439231218",
+          "HaMD5BeUx-PPdaHUGveyXZK_gYveYItZq-5C3ldqmyCDeKo7A43xJzPqtYznXLn1CqdH1zJ1Si0",
+          "0",
         );
       },
     );

@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.baijiayun.live.ui.LiveSDKWithUI;
 import com.baijiayun.livecore.context.LPConstants;
+import com.baijiayun.videoplayer.ui.playback.PBRoomUI;
 
 import javax.annotation.Nonnull;
 
@@ -53,6 +54,12 @@ public class FlutterLivePlugin implements MethodCallHandler {
             }
             startLiveActivity(userName, userAvatar, userNum, sign, Long.parseLong(roomId));
             return;
+        }
+        if (call.method.equals("startBack")) {
+            String roomId = call.argument("roomId");
+            String token = call.argument("token");
+            String sessionId = call.argument("sessionId");
+            startBJYPlayBack(roomId, token, sessionId);
         }
         if (call.method.equals("startVideo")) {
             String videoId = call.argument("videoId");
@@ -129,6 +136,16 @@ public class FlutterLivePlugin implements MethodCallHandler {
                             .create()
                             .show();
                 }
+            }
+        });
+    }
+
+    // 跳转到回放
+    private void startBJYPlayBack(String roomId, String token, String sessionId) {
+        PBRoomUI.enterPBRoom(registrar.activity(), roomId, token, sessionId, new PBRoomUI.OnEnterPBRoomFailedListener() {
+            @Override
+            public void onEnterPBRoomFailed(String s) {
+                Toast.makeText(registrar.context(), s, Toast.LENGTH_SHORT).show();
             }
         });
     }
