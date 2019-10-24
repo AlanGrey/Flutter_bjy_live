@@ -11,5 +11,10 @@
             android:name=".TestActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity
+            android:name=".BJYVideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/FullScreenTheme" />
     </application>
 </manifest>

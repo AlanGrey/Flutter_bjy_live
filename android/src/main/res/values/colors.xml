@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--toolbar的颜色-->
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="toolbar5DB0FF">#5DB0FF</color>
+    <!--状态栏的颜色的颜色-->
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4546</color>
+    <color name="colorToolbarTitle">#333333</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <!--背景颜色-->
+    <color name="bg_white">#FFFFFF</color>
+
+
+</resources>

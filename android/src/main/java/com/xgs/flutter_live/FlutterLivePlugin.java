@@ -12,6 +12,8 @@ import android.widget.Toast;
 import com.baijiayun.live.ui.LiveSDKWithUI;
 import com.baijiayun.livecore.context.LPConstants;
 
+import javax.annotation.Nonnull;
+
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
@@ -35,7 +37,7 @@ public class FlutterLivePlugin implements MethodCallHandler {
     }
 
     @Override
-    public void onMethodCall(MethodCall call, MethodChannel.Result result) {
+    public void onMethodCall(@Nonnull MethodCall call, @Nonnull MethodChannel.Result result) {
         if (registrar.activity() == null) {
             result.error("no_activity", "Flutter_Live plugin requires a foreground activity.", null);
             return;
@@ -49,12 +51,20 @@ public class FlutterLivePlugin implements MethodCallHandler {
             if (roomId == null || roomId.equals("")) {
                 roomId = "0";
             }
-//            Log.d("tag","userName = " + userName);
-//            Log.d("tag","userNum = " + userNum);
-//            Log.d("tag","userAvatar = " + userAvatar);
-//            Log.d("tag","sign = " + sign);
-//            Log.d("tag","roomId = " + roomId);
             startLiveActivity(userName, userAvatar, userNum, sign, Long.parseLong(roomId));
+            return;
+        }
+        if (call.method.equals("startVideo")) {
+            String videoId = call.argument("videoId");
+            String token = call.argument("token");
+            String userName = call.argument("userName");
+            String userId = call.argument("userId");
+            String title = call.argument("title");
+            if (videoId == null || videoId.equals("")) {
+                videoId = "0";
+            }
+            startBJYPVideo(userName, userId, token, Long.parseLong(videoId), title);
+            return;
         }
         if (call.method.equals("startTest")) {
             String userName = call.argument("userName");
@@ -122,4 +132,19 @@ public class FlutterLivePlugin implements MethodCallHandler {
             }
         });
     }
+
+    // 跳转到点播
+    private void startBJYPVideo(String userName, String userId, String token, long videoId, String title) {
+        Intent intent = new Intent(registrar.activity(), BJYVideoPlayerActivity.class);
+        Bundle bundle = new Bundle();
+        bundle.putBoolean("isOffline", false);
+        bundle.putLong("videoId", videoId);
+        bundle.putString("token", token);
+        bundle.putString("userName", userName);
+        bundle.putString("userId", userId);
+        bundle.putString("title", title);
+        intent.putExtras(bundle);
+        registrar.activity().startActivity(intent);
+    }
+
 }
