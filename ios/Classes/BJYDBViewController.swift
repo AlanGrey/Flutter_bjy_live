@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import BJVideoPlayerUI
+
 
 
 
@@ -16,6 +16,8 @@ class BJYDBViewController: UIViewController{
     var videoId:String = ""
     var token:String = ""
     var bjpvc:BJPUViewController?
+    
+    var progress: ((Int,Int) -> Void)?;
     
     
     var defaultStatusBarStyle :UIStatusBarStyle? ;
@@ -33,7 +35,9 @@ class BJYDBViewController: UIViewController{
         
         UIApplication.shared.statusBarStyle = defaultStatusBarStyle ?? UIStatusBarStyle.lightContent
         
+        
     }
+    
     
     
     override func viewDidLoad() {
@@ -53,12 +57,16 @@ class BJYDBViewController: UIViewController{
     func addBJPUView(){
 
          let options = BJPUVideoOptions.init()
+         options.playTimeRecordEnabled = true
+        
+        
          bjpvc = BJPUViewController.init(videoOptions: options)
-         
          self.addChildViewController(bjpvc!)
          bjpvc!.didMove(toParentViewController: self)
          
         self.view.addSubview(bjpvc!.view)
+        
+        
          
         let topView = bjpvc!.view.subviews[3]
         topView.subviews[0].isHidden = true
@@ -66,6 +74,8 @@ class BJYDBViewController: UIViewController{
         topBarBG = topView.backgroundColor
         
         topView.backgroundColor = UIColor.clear
+        
+        
         
         
         
@@ -88,17 +98,14 @@ class BJYDBViewController: UIViewController{
         
         let image =  UIImage.init(named: "resource.bundle/close")?.withRenderingMode(.alwaysOriginal)
         
-        
-        print(image?.size)
-        
-        
-        
-        
         let backBtn = UIBarButtonItem.init(image: image, style: .plain, target: self, action: #selector(backBtnClick))
         self.navigationItem.leftBarButtonItem = backBtn
     }
     
     @objc func backBtnClick(){
+        
+        
+        progress?(Int(self.bjpvc?.playerManager.currentTime ?? 0),Int(self.bjpvc?.playerManager.duration ?? 0))
         self.dismiss(animated: true, completion: nil)
     }
     

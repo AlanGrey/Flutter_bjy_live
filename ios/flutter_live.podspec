@@ -19,13 +19,18 @@ A new Flutter plugin.
 
 
 
+  s.static_framework = true
   s.resources = 'Classes/resource.bundle'
   s.dependency 'Flutter'
   s.dependency 'BJLiveUI', '~> 2.2.0'
   s.dependency 'BJPlaybackUI', '~> 2.2.0'
-  s.dependency 'BJVideoPlayerUI', '~> 2.2.0'
-  
-  s.static_framework = true
+  #s.dependency 'BJVideoPlayerUI/static.source','~> 2.2.0'
+
   s.ios.deployment_target = '9.0'
+
+ s.resource_bundles = {
+        'BJVideoPlayerUI' => ['Classes/BJVideoPlayerUI/Assets/*.png']
+      }
+
 end
 

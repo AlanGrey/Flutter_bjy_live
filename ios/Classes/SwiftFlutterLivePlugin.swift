@@ -3,7 +3,7 @@ import UIKit
 
 import BJLiveUI
 import BJPlaybackUI
-import BJVideoPlayerUI
+
 
 public class SwiftFlutterLivePlugin: NSObject, FlutterPlugin ,BJVRequestTokenDelegate{
     
@@ -66,9 +66,9 @@ public class SwiftFlutterLivePlugin: NSObject, FlutterPlugin ,BJVRequestTokenDel
         let title = dic["title"] as! String
        
         
-        startVideo(videoId: videoId, token: token, userName: userName,userId:userId,title:title)
+        startVideo(videoId: videoId, token: token, userName: userName,userId:userId,title:title,result: result)
         
-        result(true)
+        
     }
     
     
@@ -111,7 +111,7 @@ public class SwiftFlutterLivePlugin: NSObject, FlutterPlugin ,BJVRequestTokenDel
    
     
     
-       public func startVideo(videoId:String,token:String , userName:String,userId:String,title:String){
+    public func startVideo(videoId:String,token:String , userName:String,userId:String,title:String,result: @escaping FlutterResult){
            
 
            BJVideoPlayerCore.tokenDelegate = self
@@ -121,8 +121,19 @@ public class SwiftFlutterLivePlugin: NSObject, FlutterPlugin ,BJVRequestTokenDel
             bjpvc.videoId = videoId
             bjpvc.bjtitle = title
            
+            
+        bjpvc.progress = { (current,duration) in
+            print(current)
+            print(duration)
+            result([
+                "progress": current,
+                "totalProgress": duration
+            ])
+        }
         
-            let nvc = UINavigationController.init(rootViewController: bjpvc)
+        
+        
+           let nvc = UINavigationController.init(rootViewController: bjpvc)
            
         
            let vc = UIApplication.shared.keyWindow?.rootViewController

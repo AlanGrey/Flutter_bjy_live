@@ -1,0 +1,180 @@
+PODS:
+  - AgoraRtcEngine_iOS (2.3.3)
+  - BJLiveBase (2.2.0):
+    - BJLiveBase/Base (= 2.2.0)
+  - BJLiveBase/Auth (2.2.0)
+  - BJLiveBase/Base (2.2.0):
+    - BJLiveBase/extobjc
+    - BJLiveBase/Foundation
+    - BJLiveBase/UIKit
+  - BJLiveBase/Download (2.2.0):
+    - BJLiveBase/Base
+    - BJLiveBase/Networking
+    - BJLiveBase/YYModel
+  - BJLiveBase/extobjc (2.2.0)
+  - BJLiveBase/Foundation (2.2.0):
+    - BJLiveBase/extobjc
+  - BJLiveBase/HUD (2.2.0):
+    - MBProgressHUD (~> 1.0)
+  - BJLiveBase/Networking (2.2.0):
+    - BJLiveBase/Base
+  - "BJLiveBase/Networking+BaijiaYun (2.2.0)":
+    - BJLiveBase/Base
+    - BJLiveBase/Networking
+  - BJLiveBase/PocketSocket/Client (2.2.0):
+    - BJLiveBase/PocketSocket/Core
+  - BJLiveBase/PocketSocket/Core (2.2.0)
+  - BJLiveBase/UIKit (2.2.0):
+    - BJLiveBase/extobjc
+    - BJLiveBase/Foundation
+  - BJLiveBase/WebImage/AFNetworking (2.2.0):
+    - BJLiveBase/Networking
+    - BJLiveBase/WebImage/BJLWebImage
+  - BJLiveBase/WebImage/BJLWebImage (2.2.0)
+  - BJLiveBase/YYModel (2.2.0)
+  - BJLiveCore (2.2.1):
+    - BJLiveBase (~> 2.2.0)
+    - BJLiveBase/Base (~> 2.2.0)
+    - BJLiveBase/Networking (~> 2.2.0)
+    - "BJLiveBase/Networking+BaijiaYun (~> 2.2.0)"
+    - BJLiveBase/PocketSocket/Client (~> 2.2.0)
+    - BJLiveBase/WebImage/AFNetworking (~> 2.2.0)
+    - BJLiveBase/WebImage/BJLWebImage (~> 2.2.0)
+    - BJLiveBase/YYModel (~> 2.2.0)
+    - BJLiveCore/static (= 2.2.1)
+  - BJLiveCore/BJHLMediaPlayer (2.2.1):
+    - BJLiveBase (~> 2.2.0)
+    - BJLiveBase/Base (~> 2.2.0)
+    - BJLiveBase/Networking (~> 2.2.0)
+    - "BJLiveBase/Networking+BaijiaYun (~> 2.2.0)"
+    - BJLiveBase/PocketSocket/Client (~> 2.2.0)
+    - BJLiveBase/WebImage/AFNetworking (~> 2.2.0)
+    - BJLiveBase/WebImage/BJLWebImage (~> 2.2.0)
+    - BJLiveBase/YYModel (~> 2.2.0)
+  - BJLiveCore/BJYRTCEngine (2.2.1):
+    - AgoraRtcEngine_iOS (= 2.3.3)
+    - BJLiveBase (~> 2.2.0)
+    - BJLiveBase/Base (~> 2.2.0)
+    - BJLiveBase/Networking (~> 2.2.0)
+    - "BJLiveBase/Networking+BaijiaYun (~> 2.2.0)"
+    - BJLiveBase/PocketSocket/Client (~> 2.2.0)
+    - BJLiveBase/WebImage/AFNetworking (~> 2.2.0)
+    - BJLiveBase/WebImage/BJLWebImage (~> 2.2.0)
+    - BJLiveBase/YYModel (~> 2.2.0)
+  - BJLiveCore/static (2.2.1):
+    - BJLiveBase (~> 2.2.0)
+    - BJLiveBase/Base (~> 2.2.0)
+    - BJLiveBase/Networking (~> 2.2.0)
+    - "BJLiveBase/Networking+BaijiaYun (~> 2.2.0)"
+    - BJLiveBase/PocketSocket/Client (~> 2.2.0)
+    - BJLiveBase/WebImage/AFNetworking (~> 2.2.0)
+    - BJLiveBase/WebImage/BJLWebImage (~> 2.2.0)
+    - BJLiveBase/YYModel (~> 2.2.0)
+    - BJLiveCore/BJHLMediaPlayer
+    - BJLiveCore/BJYRTCEngine
+  - BJLiveUI (2.2.0):
+    - BJLiveUI/static (= 2.2.0)
+  - BJLiveUI/static (2.2.0):
+    - BJLiveUI/static.dependencies
+  - BJLiveUI/static.dependencies (2.2.0):
+    - BJLiveBase (~> 2.2.0)
+    - BJLiveBase/Auth (~> 2.2.0)
+    - BJLiveBase/Base (~> 2.2.0)
+    - BJLiveBase/HUD (~> 2.2.0)
+    - BJLiveBase/Networking (~> 2.2.0)
+    - BJLiveBase/WebImage/AFNetworking (~> 2.2.0)
+    - BJLiveCore (~> 2.2.0)
+    - QBImagePickerController (~> 3.0)
+  - BJPlaybackUI (2.2.0):
+    - BJLiveBase (~> 2.2.0)
+    - BJLiveBase/Auth (~> 2.2.0)
+    - BJLiveBase/Base (~> 2.2.0)
+    - BJLiveBase/HUD (~> 2.2.0)
+    - BJLiveBase/Networking (~> 2.2.0)
+    - "BJLiveBase/Networking+BaijiaYun (~> 2.2.0)"
+    - BJLiveBase/WebImage/BJLWebImage (~> 2.2.0)
+    - BJPlaybackUI/static (= 2.2.0)
+    - BJVideoPlayerCore (~> 2.2.0)
+  - BJPlaybackUI/static (2.2.0):
+    - BJLiveBase (~> 2.2.0)
+    - BJLiveBase/Auth (~> 2.2.0)
+    - BJLiveBase/Base (~> 2.2.0)
+    - BJLiveBase/HUD (~> 2.2.0)
+    - BJLiveBase/Networking (~> 2.2.0)
+    - "BJLiveBase/Networking+BaijiaYun (~> 2.2.0)"
+    - BJLiveBase/WebImage/BJLWebImage (~> 2.2.0)
+    - BJVideoPlayerCore (~> 2.2.0)
+  - BJVideoPlayerCore (2.2.0):
+    - BJLiveBase (~> 2.2.0)
+    - BJLiveBase/Base (~> 2.2.0)
+    - BJLiveBase/Download (~> 2.2.0)
+    - BJLiveBase/Networking (~> 2.2.0)
+    - "BJLiveBase/Networking+BaijiaYun (~> 2.2.0)"
+    - BJLiveBase/WebImage/BJLWebImage (~> 2.2.0)
+    - BJLiveBase/YYModel (~> 2.2.0)
+    - BJLiveCore (~> 2.2.0)
+    - BJVideoPlayerCore/static (= 2.2.0)
+  - BJVideoPlayerCore/BJYIJKMediaFramework (2.2.0):
+    - BJLiveBase (~> 2.2.0)
+    - BJLiveBase/Base (~> 2.2.0)
+    - BJLiveBase/Download (~> 2.2.0)
+    - BJLiveBase/Networking (~> 2.2.0)
+    - "BJLiveBase/Networking+BaijiaYun (~> 2.2.0)"
+    - BJLiveBase/WebImage/BJLWebImage (~> 2.2.0)
+    - BJLiveBase/YYModel (~> 2.2.0)
+    - BJLiveCore (~> 2.2.0)
+  - BJVideoPlayerCore/static (2.2.0):
+    - BJLiveBase (~> 2.2.0)
+    - BJLiveBase/Base (~> 2.2.0)
+    - BJLiveBase/Download (~> 2.2.0)
+    - BJLiveBase/Networking (~> 2.2.0)
+    - "BJLiveBase/Networking+BaijiaYun (~> 2.2.0)"
+    - BJLiveBase/WebImage/BJLWebImage (~> 2.2.0)
+    - BJLiveBase/YYModel (~> 2.2.0)
+    - BJLiveCore (~> 2.2.0)
+    - BJVideoPlayerCore/BJYIJKMediaFramework
+  - Flutter (1.0.0)
+  - flutter_live (0.0.1):
+    - BJLiveUI (~> 2.2.0)
+    - BJPlaybackUI (~> 2.2.0)
+    - Flutter
+  - MBProgressHUD (1.1.0)
+  - QBImagePickerController (3.4.0)
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios`)
+  - flutter_live (from `.symlinks/plugins/flutter_live/ios`)
+
+SPEC REPOS:
+  http://git.baijiashilian.com/open-ios/specs.git:
+    - BJLiveBase
+    - BJLiveCore
+    - BJLiveUI
+    - BJPlaybackUI
+    - BJVideoPlayerCore
+  https://github.com/CocoaPods/Specs.git:
+    - AgoraRtcEngine_iOS
+    - MBProgressHUD
+    - QBImagePickerController
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  flutter_live:
+    :path: ".symlinks/plugins/flutter_live/ios"
+
+SPEC CHECKSUMS:
+  AgoraRtcEngine_iOS: 8ad4b58dafed2cec5df03fa1f0ddbdad2c9ff958
+  BJLiveBase: 8a974bfb55bb3743a6a150fb8b562aa5602ef710
+  BJLiveCore: 5086d47fdab9f34d5e0c8568f10f75c448344afa
+  BJLiveUI: 542a5fd9bf026748a9983021397626d26089fa7d
+  BJPlaybackUI: 4b77960c9a205d93c97e89ad42e19a916a5c0e07
+  BJVideoPlayerCore: 79869bdbf2e59ce8d9e6ea96ba4a86f9f1649913
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_live: 3b3030f6b440ea69df948b1f12ac24abab1bb6d8
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+
+PODFILE CHECKSUM: d00014c01a916c64d1d275078928f4bab4251273
+
+COCOAPODS: 1.8.4
