@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -52,6 +53,7 @@ public class CustomBJYVideoView extends BaseVideoView {
     private int mAspectRatio = AspectRatio.AspectRatio_16_9.ordinal();
     private int mRenderType = IRender.RENDER_TYPE_SURFACE_VIEW;
     private boolean isPlayOnlineVideo = false;
+    private IPlayProgressListener iPlayProgressListener;
 
     public CustomBJYVideoView(@NonNull Context context) {
         this(context, null);
@@ -115,6 +117,9 @@ public class CustomBJYVideoView extends BaseVideoView {
             bjyVideoPlayer.addOnPlayingTimeChangeListener(new OnPlayingTimeChangeListener() {
                 @Override
                 public void onPlayingTimeChange(int currentTime, int duration) {
+                    if (iPlayProgressListener != null) {
+                        iPlayProgressListener.onProgressCallBack(currentTime, duration);
+                    }
                     //只通知到controller component
                     Bundle bundle = BundlePool.obtainPrivate(UIEventKey.KEY_CONTROLLER_COMPONENT, currentTime);
                     componentContainer.dispatchPlayEvent(OnPlayerEventListener.PLAYER_EVENT_ON_TIMER_UPDATE, bundle);
@@ -252,5 +257,9 @@ public class CustomBJYVideoView extends BaseVideoView {
         } else {
             audioCoverIv.setVisibility(View.GONE);
         }
+    }
+
+    public void setPlayProgressListener(IPlayProgressListener listener) {
+        this.iPlayProgressListener = listener;
     }
 }

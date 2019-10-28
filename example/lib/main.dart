@@ -51,10 +51,10 @@ class _MyAppState extends State<MyApp> {
       ),
       onTap: () {
         FlutterLive.instance.startLiveActivity(
-          "test",
-          "asdasdasd",
-          "https://oss-cn-shenzhen.aliyuncs.com/shenlun/pic/2019/10/22/16/1571732552500_45135fda-cc9e-41bf-a596-faa0345d61a3.jpg?OSSAccessKeyId=0qzfiBreffBeNSjN&Expires=4725419480&Signature=%2FzFcW2FZ5eEIzkrD3eF3iSyB6vE%3D",
-          "08bad8c3f6f067286c794bd30e6f7e3c",
+          "123456",
+          "12555500000",
+          "https://oss-cn-shenzhen.aliyuncs.com/shenlun/pic/2019/10/24/17/1571908699755_9e4bdfc0-089a-4f39-92bb-f6d2ee8ff868.jpg?OSSAccessKeyId=0qzfiBreffBeNSjN&Expires=4725673163&Signature=comRZqMZjoi%2F1SuzFHi18To%2BLao%3D",
+          "0fdc59c147d43f75a6e05d50fcf9f209",
           "19102354370699",
         );
 //            FlutterLive.instance.startTestActivity();
@@ -76,14 +76,16 @@ class _MyAppState extends State<MyApp> {
         ),
         margin: EdgeInsets.all(16.0),
       ),
-      onTap: () {
-        FlutterLive.instance.startVideoActivity(
+      onTap: () async {
+        double rate = await FlutterLive.instance.startVideoActivity(
           "Grey",
           "Hunt123459999",
           "7Enorfb7ARbPdaHUGveyXfIS9zHKsJoQgS-_vFmWAUEHOnWKCLWbAg",
           "27725726",
           "这是一个测试的标题",
         );
+
+        print("播放进度 ： $rate");
       },
     );
   }
