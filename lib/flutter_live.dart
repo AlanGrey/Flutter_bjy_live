@@ -3,6 +3,9 @@ import 'package:flutter/services.dart';
 /// Created  on 2019/10/12.
 /// @author grey
 /// Function :  直接跳转百家云平台
+
+typedef OnVideoProgressCallback = Function(int, int);
+
 class FlutterLive {
   factory FlutterLive() => _getInstance();
 
@@ -22,7 +25,7 @@ class FlutterLive {
   }
 
   Future<dynamic> _methodCallHandler(MethodCall call) async {
-    if (call.method == "callBack") {}
+    if (call.method == "video_progress") {}
   }
 
   MethodChannel _channel;
@@ -47,25 +50,25 @@ class FlutterLive {
     });
   }
 
-  // 跳转在线直播
-  void startVideoActivity(String userName, String userId, String token, String videoId, String title) {
-    _channel.invokeMethod("startVideo", {
+  // 跳转在线点播
+  Future<double> startVideoActivity(String userName, String userId, String token, String videoId, String title) async {
+    final dynamic map = await _channel.invokeMethod("startVideo", {
       'videoId': videoId,
       'token': token,
       'userName': userName,
       'userId': userId,
       'title': title,
     });
-  }
 
-  void startTestActivity() {
-    _channel.invokeListMethod("startTest", {
-      'userName': '123456',
-      'userNum': '12555500000',
-      'userAvatar':
-          'http://tmp/wx9fd2a84766c0dda5.o6zAJs0oTVyOg5T7zhHj3CN9L3oQ.twIfOl6IMgw12a17e8c1fb3c815fa16d70b17f6d6522.png',
-      'sign': 'bebb30cdc6f7eeaf9bc5d34d4bd55616',
-      'roomId': '19102354370699',
-    });
+    if (map is Map) {
+      int progress = map["progress"] ?? 0;
+      int totalProgress = map["totalProgress"] ?? 0;
+      if (totalProgress == 0) {
+        return 0;
+      }
+      double rate = (progress / totalProgress) * 100;
+      return rate;
+    }
+    return 0;
   }
 }

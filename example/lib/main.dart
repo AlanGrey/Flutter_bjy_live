@@ -76,14 +76,16 @@ class _MyAppState extends State<MyApp> {
         ),
         margin: EdgeInsets.all(16.0),
       ),
-      onTap: () {
-        FlutterLive.instance.startVideoActivity(
+      onTap: () async {
+        double rate = await FlutterLive.instance.startVideoActivity(
           "Grey",
           "Hunt123459999",
           "7Enorfb7ARbPdaHUGveyXfIS9zHKsJoQgS-_vFmWAUEHOnWKCLWbAg",
           "27725726",
           "这是一个测试的标题",
         );
+
+        print("播放进度 ： $rate");
       },
     );
   }

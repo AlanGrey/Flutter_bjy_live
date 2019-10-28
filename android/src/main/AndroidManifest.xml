@@ -7,10 +7,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="flutter_live"
         tools:replace="android:name,android:label">
-        <activity
-            android:name=".TestActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
         <activity
             android:name=".BJYVideoPlayerActivity"

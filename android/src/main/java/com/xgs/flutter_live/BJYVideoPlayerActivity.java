@@ -15,6 +15,7 @@ import com.baijiayun.videoplayer.ui.event.UIEventKey;
 import com.baijiayun.videoplayer.ui.listener.IComponentEventListener;
 import com.baijiayun.videoplayer.util.Utils;
 import com.xgs.flutter_live.video.CustomBJYVideoView;
+import com.xgs.flutter_live.video.IPlayProgressListener;
 
 /**
  * Created  on 2019/10/24.
@@ -33,6 +34,9 @@ public class BJYVideoPlayerActivity extends BaseActivity {
     String title = "";
     DownloadModel downloadVideo;
 
+    int progress = 0;
+    int totalProgress = 0;
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -46,6 +50,7 @@ public class BJYVideoPlayerActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        BJYController.onPlayRateOfProgress(progress, totalProgress);
         bjyVideoView.onDestroy();
     }
 
@@ -128,6 +133,18 @@ public class BJYVideoPlayerActivity extends BaseActivity {
                 .setUserInfo(userName, userId)
                 //绑定activity生命周期
                 .setLifecycle(getLifecycle()).build());
+
+        bjyVideoView.setPlayProgressListener(new IPlayProgressListener() {
+            @Override
+            public void onProgressCallBack(int p, int tp) {
+                if (progress <= p) {
+                    progress = p;
+                }
+                if (totalProgress <= tp) {
+                    totalProgress = tp;
+                }
+            }
+        });
 
         if (isOffline) {
             bjyVideoView.setupLocalVideoWithDownloadModel((DownloadModel) getIntent().getSerializableExtra("videoDownloadModel"));
