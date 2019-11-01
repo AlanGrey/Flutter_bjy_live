@@ -2,136 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d61e801-437f-451e-993e-cf86e600eb4c" name="Default Changelist" comment="百家云IOS">
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_audio_only@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_back@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_backward@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_backward@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_forward@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_forward@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_index_play_n@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_light@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_light@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_lock@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_logo@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_next@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_pause@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_play@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_player_current_big_n@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_player_current_n@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_player_progress_gray_n@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_player_progress_orange_n@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_player_video_back_white@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_scale@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_slider_b@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_slider_s@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_sun@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_sun@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Assets/ic_unlock@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/BJPUMacro.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/BJVideoPlayerUI.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/BJVideoPlayerUI.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/Theme/BJPUTheme.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/Theme/BJPUTheme.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/Util/BJPUAppearance.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/Util/BJPUAppearance.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/Util/BJPUVideoOptions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/Util/BJPUVideoOptions.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/Util/MBProgressHUD+bjp.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/Util/MBProgressHUD+bjp.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUMediaControlView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUMediaControlView.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUMediaSettingCell.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUMediaSettingCell.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUMediaSettingView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUMediaSettingView.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUProgressView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUProgressView.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUReloadView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUReloadView.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUSliderView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUSliderView.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+media.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+media.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+observer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+observer.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+protected.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+reachability.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+reachability.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+ui.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+ui.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_audio_only@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_back@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_backward@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_backward@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_forward@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_forward@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_index_play_n@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_light@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_light@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_lock@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_logo@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_next@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_pause@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_play@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_player_current_big_n@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_player_current_n@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_player_progress_gray_n@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_player_progress_orange_n@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_player_video_back_white@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_scale@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_slider_b@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_slider_s@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_sun@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_sun@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Assets/ic_unlock@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/BJPUMacro.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/BJVideoPlayerUI.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/BJVideoPlayerUI.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/Theme/BJPUTheme.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/Theme/BJPUTheme.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/Util/BJPUAppearance.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/Util/BJPUAppearance.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/Util/BJPUVideoOptions.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/Util/BJPUVideoOptions.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/Util/MBProgressHUD+bjp.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/Util/MBProgressHUD+bjp.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUMediaControlView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUMediaControlView.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUMediaSettingCell.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUMediaSettingCell.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUMediaSettingView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUMediaSettingView.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUProgressView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUProgressView.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUReloadView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUReloadView.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUSliderView.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/View/BJPUSliderView.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+media.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+media.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+observer.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+observer.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+protected.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+reachability.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+reachability.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+ui.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+ui.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/example/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/example/ios/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/example/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/example/ios/Runner/Info.plist" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJYDBViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/BJYDBViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/SwiftFlutterLivePlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/Classes/SwiftFlutterLivePlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/flutter_live.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_live/ios/flutter_live.podspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Runner/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+ui.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/BJVideoPlayerUI/Classes/ViewController/BJPUViewController+ui.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Classes/BJYDBViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/BJYDBViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/FlutterLivePlugin.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/FlutterLivePlugin.m" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterLivePlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterLivePlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/flutter_live.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/flutter_live.podspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_live.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_live.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/flutter_live.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="282">
-              <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
+              <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -168,17 +50,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ios/flutter_live.podspec">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
+            <state relative-caret-position="837">
               <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/example/ios/Podfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-175">
-              <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
+            <state relative-caret-position="341">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -192,9 +74,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/example/lib/main.dart" />
-        <option value="$PROJECT_DIR$/example/ios/Podfile" />
         <option value="$PROJECT_DIR$/ios/flutter_live.podspec" />
         <option value="$PROJECT_DIR$/lib/flutter_live.dart" />
+        <option value="$PROJECT_DIR$/example/ios/Podfile" />
       </list>
     </option>
   </component>
@@ -227,24 +109,7 @@
             <path>
               <item name="flutter_bjy_live" type="b2602c69:ProjectViewProjectNode" />
               <item name="flutter_bjy_live" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_bjy_live" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_bjy_live" type="462c0819:PsiDirectoryNode" />
-              <item name="example" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_bjy_live" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_bjy_live" type="462c0819:PsiDirectoryNode" />
               <item name="ios" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flutter_bjy_live" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_bjy_live" type="462c0819:PsiDirectoryNode" />
-              <item name="ios" type="462c0819:PsiDirectoryNode" />
-              <item name="Classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flutter_bjy_live" type="b2602c69:ProjectViewProjectNode" />
@@ -255,8 +120,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,15 +215,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572243660581</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="百家云IOS">
+      <created>1572258744682</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1572258744682</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-388" y="-1080" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3353068" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3406889" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -367,11 +238,11 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" weight="0.32921812" />
       <window_info anchor="bottom" id="DevEco Output" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28703704" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.14814815" />
       <window_info anchor="bottom" id="VersionChecker" order="3" />
       <window_info anchor="bottom" id="TODO" order="4" />
       <window_info anchor="bottom" id="Debug" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.29320988" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.29218107" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.43004116" />
@@ -414,17 +285,10 @@
     <entry file="file://$PROJECT_DIR$/ios/Classes/resource.bundle/close.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/ios/Podfile">
+    <entry file="file://$PROJECT_DIR$/lib/flutter_live.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ios/flutter_live.podspec">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="282">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -438,10 +302,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/flutter_live.dart">
+    <entry file="file://$PROJECT_DIR$/ios/flutter_live.podspec">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="70" column="53" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="53" />
+        <state relative-caret-position="837">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/ios/Podfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
