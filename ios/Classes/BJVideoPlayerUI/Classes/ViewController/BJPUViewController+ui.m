@@ -35,7 +35,7 @@
     }];
     
     // topBarView
-    CGFloat topBarHeight = 40.0;
+    CGFloat topBarHeight = 44.0;
     [self.view addSubview:self.topBarView];
     [self.topBarView bjl_makeConstraints:^(BJLConstraintMaker *make) {
         make.top.left.right.equalTo(self.view);
@@ -48,8 +48,9 @@
         button.imageView.contentMode = UIViewContentModeScaleAspectFill;
         [button setImage:[BJPUTheme backButtonImage] forState:UIControlStateNormal];
         button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-        button.imageEdgeInsets = UIEdgeInsetsMake(0.0, 15.0, 0.0, 0.0);
+        button.imageEdgeInsets = UIEdgeInsetsMake(0.0, 20.0, 0.0, 0.0);
         [button addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+        
         button;
     });
     [self.topBarView addSubview:cancelButton];
@@ -58,6 +59,28 @@
         make.centerY.equalTo(self.topBarView);
         make.size.equal.sizeOffset(CGSizeMake(topBarHeight * 1.5, topBarHeight));
     }];
+    
+    
+    UILabel *titleLabel = ({
+        UILabel *label = [[UILabel alloc] init];
+        label.tag = 111;
+        [label setAdjustsFontSizeToFitWidth:YES];
+        label.font = [UIFont systemFontOfSize:14];
+        [label sizeToFit];
+        label.textColor = UIColor.whiteColor;
+        label.text = @"";
+        label;
+        
+    });
+    
+    [self.topBarView addSubview:titleLabel];
+    [titleLabel bjl_makeConstraints:^(BJLConstraintMaker * _Nonnull make) {
+        make.left.equalTo(cancelButton.bjl_right).offset(-10);
+        make.centerY.equalTo(self.topBarView);
+        make.right.equalTo(self.topBarView.bjl_right).offset(-20);
+    }];
+    
+    
     
     // sliderView
     [self.view addSubview:self.sliderView];
@@ -204,13 +227,35 @@
     }
     [self setLayoutType:layoutType];
     [self updatePlayProgress];
-
+    
     [self.mediaControlView updateConstraintsWithLayoutType:horizon];
+    
+   // [self updateTopBarConstriantsWithLayoutType:horizon];
     
     BOOL controlHidden = self.mediaControlView.hidden;
     // mediaSettingView: 1: 竖屏：直接隐藏；2.之前是隐藏状态，继续保持。
     self.mediaSettingView.hidden = !horizon || self.mediaSettingView.hidden;
     self.lockButton.hidden = !horizon || controlHidden;
+}
+
+-(void)updateTopBarConstriantsWithLayoutType:(BOOL)horizon {
+    
+    UIView *tb = self.topBarView ;
+    if (horizon) {
+        
+        [tb bjl_updateConstraints:^(BJLConstraintMaker * _Nonnull make) {
+            make.top.equalTo(self.view).offset(0);
+        }];
+        
+        
+    }else{
+        
+        [tb bjl_updateConstraints:^(BJLConstraintMaker * _Nonnull make) {
+            make.top.equalTo(self.view).offset(22);
+        }];
+    }
+    
+    
 }
 
 - (void)updatePlayerViewConstraintWithVideoRatio:(CGFloat)ratio {

@@ -123,8 +123,7 @@ public class SwiftFlutterLivePlugin: NSObject, FlutterPlugin ,BJVRequestTokenDel
            
             
         bjpvc.progress = { (current,duration) in
-            print(current)
-            print(duration)
+           
             result([
                 "progress": current,
                 "totalProgress": duration
